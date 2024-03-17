@@ -1,0 +1,37 @@
+{
+  "name": "strategic-communication",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next-sitemap  --config next-sitemap.config.js",
+    "postbuild": "next-sitemap  --config next-sitemap.config.js",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.2",
+    "@heroicons/react": "^2.0.11",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.4",
+    "js-cookie": "^3.0.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "next": "12.2.5",
+    "next-sitemap": "^3.1.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hydration-provider": "^1.0.1",
+    "react-redux": "^8.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}

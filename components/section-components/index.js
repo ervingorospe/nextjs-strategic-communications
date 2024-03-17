@@ -1,0 +1,5 @@
+export { default as Titles } from './titles'
+export { default as Body } from './body'
+export { default as SectionButtons } from './section-buttons'
+export { default as ImageHolder} from './image-holder'
+export { default as VideoHolder } from './video-holder'

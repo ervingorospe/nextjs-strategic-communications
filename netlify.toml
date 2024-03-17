@@ -1,0 +1,61 @@
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+[build]
+command = "yarn && yarn build"
+publish = ".next"
+
+[[redirects]]
+  from = "/inside.php%EF%B9%96page=about.html"
+  to = "/about"
+  status = 302
+  
+[[redirects]]
+  from = "/inside.php%EF%B9%96page=principal.html"
+  to = "/principal"
+  status = 302
+
+[[redirects]]
+  from = "/inside.php%EF%B9%96page=services.html"
+  to = "/services"
+  status = 302
+
+[[redirects]]
+  from = "/inside.php%EF%B9%96page=contact.html"
+  to = "/contact"
+  status = 302
+
+[[redirects]]
+  from = "/inside.php%EF%B9%96page=request_a_call.html"
+  to = "/request-a-call"
+  status = 302
+
+[[redirects]]
+  from = "/inside.php"
+  to = "/about"
+  status = 302
+  query = {page = "about.html"}
+
+[[redirects]]
+  from = "/inside.php"
+  to = "/principal"
+  status = 302
+  query = {page = "principal.html"}
+
+[[redirects]]
+  from = "/inside.php"
+  to = "/services"
+  status = 302
+  query = {page = "services.html"}
+
+[[redirects]]
+  from = "/inside.php"
+  to = "/contact"
+  status = 302
+  query = {page = "contact.html"}
+
+[[redirects]]
+  from = "/inside.php"
+  to = "/request-a-call"
+  status = 302
+  query = {page = "request_a_call.html"}

@@ -1,0 +1,64 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200;0,7..72,300;0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;0,7..72,800;0,7..72,900;1,7..72,200;1,7..72,300;1,7..72,400;1,7..72,500;1,7..72,600;1,7..72,700;1,7..72,800;1,7..72,900&display=swap'); */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: auto !important;
+}
+
+.hero-bg-image{
+	background-image: url("data:image/svg+xml,%3Csvg width='90' height='80' stroke='transparent' stroke-width='1' fill='white' fill-opacity='0.1' xmlns='http://www.w3.org/2000/svg' id='Layer_2' viewBox='0 0 106.61 106.61'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none%3B%7D%3C/style%3E%3C/defs%3E%3Cg id='Logos'%3E%3Cg%3E%3Cpolygon class='cls-1' points='21.63 21.17 50.81 21.17 50.81 0 0 0 0 50.34 21.63 50.34 21.63 21.17'/%3E%3Cpolygon class='cls-1' points='21.63 84.25 21.63 55.07 0 55.07 0 106.61 50.81 106.61 50.81 84.25 21.63 84.25'/%3E%3Cpath class='cls-1' d='M25.96 50.34h13.47v4.73h-13.47c1.13 13.2 11.65 23.71 24.85 24.85v-12.74h4.73v12.74c13.2-1.13 23.71-11.65 24.85-24.85h-13.2v-4.73h13.2c-1.13-13.2-11.65-23.71-24.85-24.85v13.93h-4.73v-13.93c-13.2 1.13-23.71 11.65-24.85 24.85Z'/%3E%3Cpolygon class='cls-1' points='84.71 84.25 55.54 84.25 55.54 106.61 106.61 106.61 106.61 55.07 84.71 55.07 84.71 84.25'/%3E%3Cpolygon class='cls-1' points='55.54 0 55.54 21.17 84.71 21.17 84.71 50.34 106.61 50.34 106.61 0 55.54 0'/%3E%3Cpath d='M25.96 55.07h-4.33v29.18h29.18v-4.33c-13.2-1.13-23.71-11.65-24.85-24.85Z'/%3E%3Cpath d='M55.54 79.92v4.33h29.18v-29.18h-4.33c-1.13 13.2-11.65 23.71-24.85 24.85Z'/%3E%3Cpath d='M80.38 50.34h4.33V21.17h-29.18v4.33c13.2 1.13 23.71 11.65 24.85 24.85Z'/%3E%3Cpath d='M50.81 25.49v-4.33H21.63v29.18h4.33c1.13-13.2 11.65-23.71 24.85-24.85Z'/%3E%3Cpath d='M55.54 39.43v-13.93c-.78-.07-1.57-.11-2.37-.11s-1.59 .04-2.37 .11v13.93h4.73Z'/%3E%3Crect x='50.81' width='4.73' height='21.17'/%3E%3Cpath d='M50.81 25.49c.78-.07 1.57-.11 2.37-.11s1.59 .04 2.37 .11v-4.33h-4.73v4.33Z'/%3E%3Cpath d='M67.18 55.07h13.2c.07-.78 .11-1.57 .11-2.37s-.04-1.59-.11-2.37h-13.2v4.73Z'/%3E%3Crect x='84.71' y='50.34' width='21.9' height='4.73'/%3E%3Cpath d='M80.49 52.71c0 .8-.04 1.59-.11 2.37h4.33v-4.73h-4.33c.07 .78 .11 1.57 .11 2.37Z'/%3E%3Crect x='50.81' y='84.25' width='4.73' height='22.36'/%3E%3Cpath d='M50.81 67.18v12.74c.78 .07 1.57 .11 2.37 .11s1.59-.04 2.37-.11v-12.74h-4.73Z'/%3E%3Cpath d='M53.17 80.03c-.8 0-1.59-.04-2.37-.11v4.33h4.73v-4.33c-.78 .07-1.57 .11-2.37 .11Z'/%3E%3Cpath d='M39.43 50.34h-13.47c-.07 .78-.11 1.57-.11 2.37s.04 1.59 .11 2.37h13.47v-4.73Z'/%3E%3Crect y='50.34' width='21.63' height='4.73'/%3E%3Cpath d='M25.85 52.71c0-.8 .04-1.59 .11-2.37h-4.33v4.73h4.33c-.07-.78-.11-1.57-.11-2.37Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/*
+shared button styles
+
+here in the CSS you define the padding, rounded corners, borders, casing, tracking etc.
+
+the actual bg color,text color and hover colors are defined within the classes of the actual HTML elements
+ */
+
+@layer components {
+  .button {
+    @apply cursor-pointer items-center justify-center rounded-md border-2 border-transparent px-6 py-2 tracking-wider text-base font-semibold shadow-sm transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+/*
+define different button sizes
+button-sm, button-lg, button-xl etc.
+
+you can change the size of the button per breakpoint
+class="button button-sm md:button-base xl:button-xl"
+*/
+  .button-base {
+    @apply text-base;
+  }
+
+  .button-xs {
+    @apply px-3 py-1 text-xs;
+  }
+
+  .button-sm {
+    @apply px-4 py-1.5 text-sm;
+  }
+
+  .button-lg {
+    @apply px-6 py-2 text-lg;
+  }
+
+  .button-xl {
+    @apply px-7 py-2.5 text-xl;
+  }
+
+  .button-2xl {
+    @apply px-8 py-2.5 text-2xl;
+  }
+}
